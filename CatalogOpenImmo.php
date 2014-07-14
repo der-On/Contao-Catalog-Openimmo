@@ -904,7 +904,13 @@ class CatalogOpenImmo extends BackendModule
 		foreach(array_keys($fields) as $catField) {
 			foreach($fields[$catField] as $fieldPath) {
 				$value = $this->getFieldData($xml,$fieldPath,$xpath,$catalogObj);
-				if($value!=null) $immo[$catField] = $value;
+				if($value != null) {
+                    $immo[$catField] = $value;
+                }
+                // clear non existing fields
+                else {
+                    $immo[$catField] = '';
+                }
 			}
 		}
 	}
