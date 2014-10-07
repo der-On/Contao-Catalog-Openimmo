@@ -1,3 +1,7 @@
 This module makes it possible to import OpenImmo-Data into an existing catalog.
 
 The files need to be placed within the folder system/modules/catalog_openimmo/
+
+!Deprecated: 
+This module is deprecated in favour of https://github.com/der-On/Contao-MetaModels-OpenImmo
+If you are still using the catalog module think about switching to the actively maintained metamodels.
